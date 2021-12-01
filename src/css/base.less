@@ -1,5 +1,5 @@
 // 基础样式
-@color-main: #00b38a; // 主色
+@color-main: #90be98; // 主色
 @font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif; // 普通字体
 @font-family-title: 'Lucida Grande', 'Hiragino Sans GB', 'Hiragino Sans GB W3', @font-family; // 标题字体
 
@@ -30,6 +30,7 @@ body {
     }
 }
 a {
+    color: multiply(@color-main,rgb(122, 122, 122));
     text-decoration: none;
     transition: all .2s ease-in-out;
 }
@@ -317,6 +318,7 @@ a {
             float: left;
             display: inline-block;
             font-size: 14px;
+            font-weight: 550;
             width: 135px;
             @media screen and (max-width: 720px) {
                 width: 100%;
@@ -339,6 +341,7 @@ a {
         }
         .item-name {
             float: left;
+            font-weight: 550;
             display: inline-block;
         }
     }
